@@ -59,7 +59,7 @@ public class Product {
     private BigDecimal price;
 
     @Min(value = 0, message = "Stock cannot be negative")
-    @Column(nullable = false)
+    @Column(name = "quantity", nullable = false)
     private int stock;
 
     @Column(nullable = false)
